@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="daisyui@5.css">
+    <script src="browser@4.js"></script>
+</head>
+
+<body class="poppins container">
+    
+     <div class="card bg-base-100 mx-auto mt-10 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Title</label>
+          <input type="text" id="email" class="input" placeholder="Email" />
+          <label class="label">Body</label>
+          <input type="text" id="pass" class="input" placeholder="Password" />
+          
+          <button onclick="createPost()" class="btn btn-neutral mt-4">Login</button>
+        </fieldset>
+      </div>
+    </div>
+
+</div>
+    <br>
+    <section id="cardBox" class="grid grid-cols-3 gap-5 container m-auto p-5">
+        <div class="card w-96 bg-base-100 card-md shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title">Medium Card</h2>
+                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <div class="justify-end card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- You can open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+     <fieldset class="fieldset">
+          <label class="label">Title</label>
+          <input type="text" id="editTitle" class="input w-full"  placeholder="Email" />
+          <label class="label">Body</label>
+          <input type="text" id="editPost" class="input w-full" placeholder="Password" />
+          
+          <button onclick="saveEdit()" class="btn btn-neutral mt-4">Login</button>
+        </fieldset>
+  </div>
+</dialog>
+    <script src="post.js"></script>
+</body>
+
+</html>
