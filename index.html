@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,25 @@
     <link rel="stylesheet" href="daisyui@5.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <link media="all" onload="this.media='all'" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css">
-    <link media="all"  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/solid.css">
-    <link media="all"  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-regular.css">
-    <link media="all"  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-solid.css">
-    <link media="all"  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/utility-fill-semibold.css">
-    <link media="all"  rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/utility-semibold.css">
+    <link media="all" onload="this.media='all'" rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css">
+    <link media="all" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/solid.css">
+    <link media="all" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-regular.css">
+    <link media="all" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/sharp-solid.css">
+    <link media="all" rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.2.0/css/utility-fill-semibold.css">
+    <link media="all" rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.2.0/css/utility-semibold.css">
 </head>
+
 <body>
+    <!-- Header -->
     <header class=" bg-info/10">
         <nav class="flex container m-auto justify-between py-5">
             <section>
                 <div class="flex items-center">
-                   <span class="poppins font-semibold">English</span> 
-                     <img src="assets/logo.png" alt="">
+                    <span class="poppins font-semibold">English</span>
+                    <img src="assets/logo.png" alt="">
                     <span class="hind-siliguri  font-semibold">জানালা</span>
                 </div>
             </section>
@@ -37,27 +43,131 @@
             </section>
         </nav>
     </header>
-
-    <section class="container m-auto">
+    <!-- Hero -->
+    <section class="container m-auto pt-15">
         <section class="flex items-center ">
             <section>
-                <p class="font-[500] text-lg my-3 w-[70%]">
-                    আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+                <p class="font-[400] text-lg/8 hind-siliguri my-3 w-[70%]">
+                    আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
+                    Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
                 </p>
                 <div>
                     <input class="input" type="text" placeholder="Enter your name"> <br> <br>
                     <input class="input" type="password" placeholder="........"> <br><br>
                     <button class="btn btn-primary">Get Started</button>
-                    
+
                 </div>
             </section>
             <section>
                 <div>
-                    <img  src="assets/hero-student.png" alt="">
+                    <img src="assets/hero-student.png" alt="">
                 </div>
             </section>
         </section>
     </section>
+
+    <!-- Lesson Button Groups -->
+
+    <section class="m-auto container mt-25 w-[100%]">
+        <h1 class="text-center font-bold poppins text-4xl"> <span class="text-info ">Let's</span> Learn Vocabulary</h1>
+        <section class=" flex justify-center mt-5 gap-5">
+            <button onclick="wordCard(1)" class="btn btn-primary btn-outline">
+                <i class="fa-utility-fill fa-semibold fa-book-open"></i> Lesson - 1
+            </button>
+            <button onclick="wordCard(2)" class="btn btn-primary btn-outline">
+                <i class="fa-utility-fill fa-semibold fa-book-open"></i> Lesson - 2
+            </button>
+            <button onclick="wordCard(3)" class="btn btn-primary btn-outline">
+                <i class="fa-utility-fill fa-semibold fa-book-open"></i> Lesson - 3
+            </button>
+            <button onclick="wordCard(4)" class="btn btn-primary btn-outline">
+                <i class="fa-utility-fill fa-semibold fa-book-open"></i> Lesson - 4
+            </button>
+            <button onclick="wordCard(5)" class="btn btn-primary btn-outline">
+                <i class="fa-utility-fill fa-semibold fa-book-open"></i> Lesson - 5
+            </button>
+            <button onclick="wordCard(6)" class="btn btn-primary btn-outline">
+                <i class="fa-utility-fill fa-semibold fa-book-open"></i> Lesson - 6
+            </button>
+            <button onclick="wordCard(7)" class="btn btn-primary btn-outline">
+                <i class="fa-utility-fill fa-semibold fa-book-open"></i> Lesson - 7
+            </button>
+
+        </section>
+    </section>
+
+    <section class="container m-auto">
+ <!-- id="wordBox" -->
+        <section  class="p-[64px] rounded-4xl mt-8 bg-base-200">
+            <div>
+               
+                <h3 class="text-center text-sm hind-siliguri">আপনি এখনো কোন Lesson Select করেন</h3>
+                <h1 class="text-center text-3xl my-2 hind-siliguri font-semibold">একটি Lesson Select করুন।</h1>
+            </div>
+            <section id="wordCard" class="grid-cols-3 grid gap-5 mt-4">
+                <!-- <div class="card  px-4 shadow h-full bg-base-100">
+                    <div class="card-body pt-10">
+                        <h1 class="card-title inter text-2xl block text-center">Eager</h1>
+                        <p class="inter text-center font-normal">Meaning /Pronounciation</p>
+                        <p class="hind-siliguri my-3 font-semibold text-center text-3xl">"আগ্রহী / ইগার"</p>
+                        <div class="card-action flex my-3 justify-between">
+                            <button class="btn btn-soft text-neutral rounded-sm btn-info">
+                                <i class="fa-utility-fill fa-semibold fa-circle-info"></i> 
+                            </button>
+                            <button class="btn btn-soft text-neutral rounded-sm btn-info">
+                                <i class="fa fa-volume"></i> 
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+
+                
+            </section>
+        </section>
+    </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+
+<section >
+    <dialog  id="wordModal" class="modal">
+      <div class="modal-box">
+        <div class=" mb-5">
+            
+        <h3 class="text-xl font-bold poppins">Eager ( <i class="fa fa-microphone-lines"></i> :ইগার )</h3> 
+    </div>
+    
+    <div class="my-3">
+            <h3 class="text-[20px] mb-2 font-semibold">Meaning</h3>
+            <h3 class="text-[18px] py-1 hind-siliguri font-semibold">আগ্রহী</h3>
+            <p class="">Press ESC key or click the button below to close</p>
+        
+        </div>
+        
+        <div>
+            <h3 class="text-[18px] py-1 poppins font-semibold">Example</h3>
+            <p class="py-2">Press ESC key or click the button below to close</p>    
+        </div>
+        
+        <div>
+            <h3 class="text-[20px] hind-siliguri font-semibold">সমার্থক শব্দ গুলো</h3>
+            
+            <p class="py-2">
+                <button class="btn bg-[#f0faff] text-neutral hover:bg-[#f0faff]">Ant</button>
+            </p>
+        
+        </div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+</section>
     <script src="browser@4.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
