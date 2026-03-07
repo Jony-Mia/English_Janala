@@ -12,3 +12,9 @@
 .inter{
     font-family: "Inter";
 }
+::-webkit-scrollbar{
+    display: none;
+}
+::-moz-scrollbar{
+    display: none;
+}
