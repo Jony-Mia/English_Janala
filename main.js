@@ -1,6 +1,7 @@
 const API = "https://openapi.programming-hero.com/api/words/all";
 const wordDetailsAPI = "https://openapi.programming-hero.com/api/word"
 let wordCardBox = document.getElementById('wordCard');
+let notice = document.getElementById('notice')
 let word = [];
 
 async function wordData() {
@@ -10,8 +11,8 @@ async function wordData() {
     words.data.forEach(element => {
         word.push(element);
     });
-    wordCard();
-    noFound()
+    // wordCard();
+    // noFound()
 };
 
 function noFound() {
@@ -26,15 +27,13 @@ function noFound() {
 
 function wordCard(level) {
     wordCardBox.innerText = ''; 
-    // notice.style.display="none"
-    word.filter(w => {
+   
+    notice.style.display= level === 4 || level === 7 ? "block" : "none";
 
+    word.filter(w => {
         if (w.level === level) {
-            if( level=== 4 || level=== 7 ){
-                alert('do not enter');      
-                return;          
-            }else{
-            wordCardBox.innerHTML += `
+            
+        wordCardBox.innerHTML += `
          <div class="card transition-all px-4 shadow h-full bg-base-100">
                     <div class="card-body pt-10">
                         <h1 class="card-title inter text-2xl block text-center">${w.word}</h1>
@@ -50,14 +49,10 @@ function wordCard(level) {
                         </div>
                     </div>
          </div>
-             `;
-            }
-             
-        }
-        else  {
-                     
-            
-        }
+             `;      
+        
+               
+        }     
        
     });
 }
