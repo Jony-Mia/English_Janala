@@ -38,8 +38,8 @@ function wordCard(level) {
          <div class="card transition-all px-4 shadow h-full bg-base-100">
                     <div class="card-body pt-10">
                         <h1 class="card-title inter text-2xl block text-center">${w.word}</h1>
-                        <p class="inter text-center font-normal">${w.pronunciation}</p>
-                        <p class="hind-siliguri my-3 font-semibold text-center text-3xl">"${w.meaning}"</p>
+                        <p class="inter text-center font-normal">Pronounciation/Meaning</p>
+                        <p class="hind-siliguri my-2 font-semibold text-center text-3xl">"${w.pronunciation} / ${w.meaning}"</p>
                         <div class="card-action flex my-3 justify-between">
                             <button onclick="wordDetails(${w.id})" class="btn btn-soft text-neutral rounded-sm btn-info">
                                 <i class="fa-utility-fill fa-semibold fa-circle-info"></i> 
